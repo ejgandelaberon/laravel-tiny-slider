@@ -1,0 +1,46 @@
+@import "tiny-slider/dist/tiny-slider.css";
+
+.tns-controls, .custom-tns-control {
+    @apply w-full px-8 flex flex-row justify-between items-center absolute top-1/2 left-0 z-10;
+}
+
+.tns-controls button, .custom-tns-control button {
+    @apply bg-black/50 backdrop-blur-xl rounded-full px-3 py-2;
+}
+
+.tns-nav, .custom-tns-nav {
+    @apply flex flex-row justify-center items-center space-x-2 absolute bottom-[12.5%] left-1/2
+    transform -translate-x-1/2 px-3 py-2 bg-black/50 backdrop-blur-xl rounded-full z-10;
+}
+
+.tns-nav button, .custom-tns-nav button {
+    @apply w-3 h-3 rounded-full bg-white/30;
+}
+
+.tns-nav button.tns-nav-active, .custom-tns-nav button.tns-nav-active {
+    @apply bg-white/80;
+}
+
+.tns-item {
+    @apply relative;
+}
+
+.tns-image-description {
+    @apply absolute inset-0 flex flex-col justify-center items-center z-10 mx-auto;
+}
+
+.tns-item img {
+    @apply w-full h-screen object-cover object-center;
+}
+
+.tns-item h2, .tns-item p {
+    @apply text-white text-center;
+}
+
+.tns-item h2 {
+    @apply text-5xl font-bold line-clamp-1;
+}
+
+.tns-item p {
+    @apply text-2xl line-clamp-2;
+}

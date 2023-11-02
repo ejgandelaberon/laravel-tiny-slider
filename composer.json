@@ -1,0 +1,29 @@
+{
+    "name": "ejgandelaberon/laravel-tiny-slider",
+    "description": "dev",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ejgandelaberon\\LaravelTinySlider\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EJ Beron",
+            "email": "emsephron@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "filament/support": "3.x-dev",
+        "blade-ui-kit/blade-heroicons": "^2.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ejgandelaberon\\LaravelTinySlider\\LaravelTinySliderServiceProvider"
+            ]
+        }
+    }
+}
